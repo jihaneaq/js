@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Livres</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+  <h2>📖 Gestion des livres</h2>
+<div class="api-search card" style="background: #f0f7ff; padding: 15px; border: 1px dashed #2563eb; margin-bottom: 20px;">
+  <label>🔍 Recherche rapide sur OpenLibrary (API) :</label>
+  <div style="display: flex; gap: 10px; margin-top: 5px;">
+    <input type="text" id="apiSearchInput" placeholder="Entrez un titre de livre...">
+    <button type="button" onclick="rechercherLivreAPI()" id="btnApi">Chercher</button>
+  </div>
+  <p id="apiStatus" style="font-size: 0.8em; margin-top: 5px; color: #666;"></p>
+</div>
+  <form id="formLivre">
+    <input type="text" id="titre" placeholder="Titre du livre" required>
+
+    <select id="auteur" required>
+      <option value="">-- Choisir un auteur --</option>
+    </select>
+
+    <input type="text" id="genre" placeholder="Genre">
+    <input type="date" id="annee">
+
+    <button>Ajouter le livre</button>
+  </form>
+
+  <ul id="listeLivres"></ul>
+
+  <nav>
+    <a href="index.html">⬅ Retour</a>
+  </nav>
+</div>
+
+<script src="js/storage.js"></script>
+<script src="js/livres.js"></script>
+<div id="modalFiche" class="modal" style="display:none; position:fixed; z-index:100; left:0; top:0; width:100%; height:100%; background: rgba(0,0,0,0.5);">
+  <div class="modal-content" style="background:white; margin:10% auto; padding:20px; width:50%; border-radius:15px; position:relative;">
+    <span onclick="fermerFiche()" style="position:absolute; right:20px; cursor:pointer; font-size:1.5em;">&times;</span>
+    <div id="contenuFiche">
+      </div>
+  </div>
+</div>
+</body>
+</html>

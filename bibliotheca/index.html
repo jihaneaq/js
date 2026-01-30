@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bibliotheca - Accueil</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .hero { text-align: center; padding: 40px 20px; background: #f0f7ff; border-radius: 20px; margin-bottom: 30px; }
+    .menu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+    .menu-item { 
+      text-decoration: none; color: inherit; padding: 30px; background: white; 
+      border-radius: 15px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+      transition: transform 0.2s, box-shadow 0.2s; text-align: center;
+    }
+    .menu-item:hover { transform: translateY(-5px); box-shadow: 0 8px 12px rgba(0,0,0,0.15); border: 1px solid #3b82f6; }
+    .menu-item h3 { margin-top: 15px; color: #1e293b; }
+    .menu-item p { color: #64748b; font-size: 0.9em; }
+    .icon { font-size: 3em; }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <header class="hero">
+    <h1>📚 Bibliotheca</h1>
+    <p>Votre gestionnaire de bibliothèque personnelle et analytique</p>
+  </header>
+
+  <main class="menu-grid">
+    <a href="livres.html" class="menu-item">
+      <div class="icon">📖</div>
+      <h3>Gestion des Livres</h3>
+      <p>Ajouter, modifier, trier et rechercher vos ouvrages. Importez des données via OpenLibrary.</p>
+    </a>
+
+    <a href="auteurs.html" class="menu-item">
+      <div class="icon">✍️</div>
+      <h3>Gestion des Auteurs</h3>
+      <p>Gérez votre base de données d'auteurs pour l'utiliser dans vos fiches livres.</p>
+    </a>
+
+    <a href="dashboard.html" class="menu-item">
+      <div class="icon">📊</div>
+      <h3>Dashboard & Stats</h3>
+      <p>Consultez vos indicateurs de performance (KPI) et vos graphiques analytiques.</p>
+    </a>
+  </main>
+
+  <footer style="margin-top: 50px; text-align: center; color: #94a3b8; font-size: 0.8em;">
+    <p>Projet conforme au cahier des charges - 2026</p>
+  </footer>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auteurs - Bibliotheca</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+  <h2>✍️ Gestion des auteurs</h2>
+
+  <form id="formAuteur">
+    <input type="text" id="nomAuteur" placeholder="Nom de l'auteur (ex: Victor Hugo)" required>
+    <input type="text" id="nationalite" placeholder="Nationalité (ex: Française)">
+    <button type="submit">✨ Ajouter l'auteur</button>
+  </form>
+
+  <hr>
+
+  <ul id="listeAuteurs"></ul>
+
+  <nav>
+    <a href="index.html">🏠 Accueil</a>
+    <a href="livres.html">📖 Livres</a>
+  </nav>
+</div>
+
+<script src="js/storage.js"></script>
+<script src="js/auteurs.js"></script>
+</body>
+</html>

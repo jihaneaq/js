@@ -1,0 +1,34 @@
+/* Styles spécifiques au Dashboard */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.kpi {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.kpi-label {
+    font-size: 0.85rem;
+    color: #64748b;
+    margin-bottom: 5px;
+}
+
+.kpi h3 {
+    font-size: 1.8rem;
+    color: #2563eb;
+    margin: 0;
+}
+
+.chart-container {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
